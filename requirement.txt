@@ -1,0 +1,9 @@
+tensorflow
+keras
+numpy
+opencv-python
+selenium
+matplotlib
+scikit-learn
+webdriver-manager
+pickle-mixin
