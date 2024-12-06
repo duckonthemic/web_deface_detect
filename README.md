@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```bash
 python data_collection.py
 ```
-When data_collention done, use this:
+When data_collection done, use this:
 ```bash
 python data_preprocessing.py
 ```
@@ -45,9 +45,19 @@ Once the dataset is prepared, you can start training the model with the followin
 ```bash
 python train_model.py
 ```
-This will train the model and save it as web_defacement_model.h5 in the models/ directory.
+This will train the model and save it as web_defacement_model in the models/ directory.
 
-### 5. Test the model
+### 5. Evaluate the model
+When model was saved, you can evaluate the model with these following commands:
+```bash
+python evaluate_model.py
+```
+```bash
+python save_training_report.py
+```
+These will save the report of trained model in the reports/ directory.
+
+### 6. Test the model
 To test the trained model and make detection, run my-flask-app for deploy a simple web
 cd to my-flask-app
 ```bash
@@ -61,7 +71,7 @@ Here is the directory structure of the project:
 ````
 web-deface-detect/
 ├── dataset/               # Folder containing clean and defaced iimages
-├── log/                   # Folder containing log
+├── logs/                  # Folder containing log
 ├── models/                # Folder to save the trained model
 │   └── web_defacement_model
 ├── reports/               # Folder for generated reports
